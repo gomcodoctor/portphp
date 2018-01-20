@@ -1,0 +1,37 @@
+{
+    "name": "gomcodoctor/portphp",
+    "description": "Data import/export workflow",
+    "keywords": [ "data", "import", "export", "csv", "excel", "doctrine" ],
+    "license": "MIT",
+    "homepage": "https://github.com/gomcodoctor",
+    "authors": [
+        {
+            "name": "gomcodoctor",
+            "email": "info@freeopd.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "psr/log": "~1.0",
+        "symfony/property-access": "^2.8 || ^3.0 || ^4.0",
+        "symfony/validator": "^2.8 || ^3.0 || ^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gomcodoctor\\Portphp\\": "src/",
+            "Gomcodoctor\\Portphp\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "ext-iconv": "*",
+        "ext-mbstring": "*",
+        "phpunit/phpunit": "^4.0",
+        "phpspec/phpspec": "^2.4",
+        "doctrine/instantiator": "^1.0.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}
